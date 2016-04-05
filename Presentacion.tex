@@ -1,0 +1,88 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+
+\usetheme{Warsaw}
+\usecolortheme{crane}
+\useoutertheme{shadow}
+\useinnertheme{rectangles}
+
+\setbeamertemplate{navigation symbols}{}
+
+\title[HTML y CSS]{Taller de HTML5 y CSS3}
+\subtitle{Nivel Básico}
+\author[Julián Fernández, Rubén Martín]{
+	\textbf{Julian Fernández Ortiz }
+	\\
+	\medskip
+	\scriptsize{
+	Vicepresidente de IEEE Student Branch of Granada\\
+	Grado en Ingeniería Electrónica Industrial
+	}	
+	\\	
+	\texttt{julian@correo.ugr.es}
+	\\ \ \\
+	\small{\textbf{Rubén Martín Moreno}}
+	\\
+	\medskip
+	\scriptsize{
+	Vocal en IEEE Student Branch of Granada\\
+	Grado en Estadística
+	}
+	\\
+	\texttt{rubnmrtin95@correo.ugr.es}
+}
+\date{}
+
+\AtBeginSection{
+\begin{frame}
+  \frametitle{Índice}
+  \begin{multicols}{2}
+  \tableofcontents[currentsection]
+  \end{multicols}   
+\end{frame}
+}
+
+\AtBeginSubsection{
+\begin{frame}
+  \frametitle{Índice}
+  \begin{multicols}{2}
+  \tableofcontents[currentsection,currentsubsection]
+  \end{multicols}   
+\end{frame}
+}
+
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+  \frametitle{Índice}
+  \begin{multicols}{2}
+  \tableofcontents
+  \end{multicols} 
+\end{frame}
+
+\section{CONCEPTOS GENERALES}
+	\subsection{Estructura de un Sitio Web}
+	\subsection{Los Estándares Web - W3C}
+	
+\section{HTML}
+	\subsection{Estructura de la Página}
+	\subsection{Texto}
+	\subsection{Enlaces}
+	\subsection{Listas y Tablas}
+	\subsection{Multimedia}
+	
+\section{CSS}
+	\subsection{Hojas de Estilos}
+	\subsection{Diseño}
+	\subsection{Colores}
+	\subsection{Selectores, unidades y funciones}
+	\subsection{El texto}
+	\subsection{Tablas}
+	\subsection{Transiciones}
+	
+\section{BIBLIOGRAFÍA}
+\end{document}
