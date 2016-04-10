@@ -274,7 +274,7 @@ La estructura comúnmente utilizada es:
 \end{frame}
 
 \begin{frame} %Propiedad FLOAT
-\frametitle{Modelo de Cajas - FLOAT}
+\frametitle{Elementos Flotantes}
 	Un elemento puede ``flotar'' a la derecha o a la izquierda usando la propiedad {\tt float}.
 	\begin{center}
 	\includegraphics[scale=.5]{images/Floats.jpg} 
@@ -364,16 +364,90 @@ Sistemas más comunes
 	\item \verb|text-transformation|
 	\end{itemize}
 	\end{multicols}
-	
 \end{frame}
 
 	\subsection{Enlaces}
-	\subsection{Listas y Tablas}
-	\subsection{Transiciones}
+\begin{frame}[fragile] %Enlaces - EDICIÓN
+\frametitle{Tipos de Enlaces}
+	Existen 4 atributos que se utilizan para editar los enlaces:
+	\begin{itemize}[<+->]
+	\item \verb|:link|
+	\item \verb|:visited|
+	\item \verb|:hover|
+	\item \verb|:active|
+	\item \verb|:focus|
+	\end{itemize}
+	\onslide<6-> Además se pueden completar con más atributos, como por ejemplo \verb|target|
+\end{frame}
+
+	\subsection{Listas, Cajas y Tablas}
+\begin{frame}[fragile] %Listas
+\frametitle{Listas}
+	A la hora de editar una lista tendremos en cuenta de si esta es \textit{ordenada} o \textit{desordenada}
+	\pause
+	\begin{itemize}[<+->]
+	\item \verb|list-style-type|
+	\item \verb|list-style-position|
+	\item \verb|list-style-image|
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile] %Cajas
+\frametitle{Cajas - Bordes}
+	\begin{columns}[c]
+	\column{0.55\textwidth}
+	Algunos atributos utilizados
+	\begin{itemize}[<+->]
+	\item \verb|border-color|
+	\item \verb|border-style|
+	\item \verb|border-width|
+	\item \verb|border-radius|
+	\end{itemize}
+	
+	\onslide<5-> 
+	\begin{exampleblock}{RECUERDA}
+	Puedes editar solo un lado del borde haciendo referencia con el código \verb|border-top|, \verb|border-right|, \verb|border-bottom| o  \verb|border-	left|
+	\end{exampleblock}
+	\column{0.45\textwidth}
+	\onslide<1->\begin{center}
+	\includegraphics[scale=.3]{images/ModeloCajas.jpg} 
+	\end{center}
+	\end{columns}
+\end{frame}
+
+\begin{frame}[fragile] %Tablas
+\frametitle{Tablas}
+	Para editar los bordes de las celdas ya sean pertenecientes a toda la tabla, los encabezados o al cuerpo de la tabla
+	\pause
+	\begin{itemize}[<+->]
+	\item \verb|border-collapse|
+	\item \verb|border-spacing|
+	\item \verb|caption-side|
+	\item \verb|empty-cells|
+	\end{itemize}
+\end{frame}
+	\subsection{Efectos Dinámicos}
+\begin{frame}[fragile] %Preámbulo
+	Los estilos CSS nos ayudan a crear efectos dinámicos sin la utilización de \verb|scripts|
+	
+	Algunos ejemplos son:
+	\begin{itemize}[<+->]
+	\item Botones
+	\item Menús desplegables
+	\item Pop-ups
+	\item ...
+	\end{itemize}
+\end{frame}
 	
 \section{BIBLIOGRAFÍA}
 \begin{frame}
 	http://www.w3c.es/estandares/
+	
+	http://www.w3schools.com/
+	
+	http://www.javascripter.net/faq/rgbtohex.htm
+	
+	http://librosweb.es/
 \end{frame}
 
 \end{document}
